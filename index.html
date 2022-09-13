@@ -88,6 +88,9 @@
 									<!-- <h2>이희탁 &amp; 타나카 미사키</h2> -->
 									<h2>Hitak Lee &amp; Misaki Tanaka</h2>
 									<p><span>11월 12일 오후 12시</span></p>
+									<article>
+									<span><strong>이진구</strong> ★ <strong>이명희</strong>의 장남 <strong>Groom: 이희탁</strong></span><br>
+									<span><strong>하루에</strong> ★ <strong>히로유키</strong>의 장녀 <strong>Bride: 미사키</strong></span><br></article>
 								</div>
 							</div>
 						</div>
@@ -139,11 +142,25 @@
 						<div class="col-md-12 text-center heading-section">
 							<h2>We are Getting Married!!</h2>
 							<p><strong>Nov 12, 2022 &mdash; 분당 만나교회 (경기도 성남시 분당구 양현로 353)</strong></p>
+				<div class="buttons-ctn" style="display: flex;">
+				<a href="" class="button button--left" ><span>혼주 <br> 계좌번호</span></a>
+				<a href="" class="button button--right" ><span>신랑 <br> 계좌번호</span></a>
+				</div>
+				<div class="button__content button__content--left">
+				<h2 style="color: white;">혼주: <br> 이진구<br>
+										국민은행 653202-04-069296</p></h2>
+				</div>
+				<div class="button__content button__content--right">
+				<h2 style="color:black;">신랑: <br> 이희탁<br>
+										농협: 168-02-37-21-02<br>
+										</h2>
+				</div>
 						</div>
-						
+						</div>
 					</div>
 				</div>
 			</div>
+			<div>
 			<div class="iframew">
 				<iframe src="https://www.youtube.com/embed/vYX6WWpbUWk" title="YouTube video player" allowfullscreen></iframe>
 			</div>
@@ -180,9 +197,6 @@
 							사람이 나누지 못할지니라 하시니 (마 19:6)
 						</fieldset>
                     </p>
-                    <p class="det1">
-                        <span><strong>이진구</strong> ★ <strong>이명희</strong>의 장남 <strong>Groom: 이희탁</strong></span><br>
-                        <span><strong>하루에</strong> ★ <strong>히로유키</strong>의 장녀 <strong>Bride: 타나카 미사키</strong></span><br>                    </p>
 				</div>
 			</div>
 		</div>		
@@ -344,7 +358,7 @@
 							<a class="gallery-img image-popup" href="images/22.JPG"><img src="images/22.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
 						</div>
 						<div class="gallery animate-box">
-							<a class="gallery-img image-popup" href="images/25.jpeg"><img src="images/25.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+							<a class="gallery-img image-popup" href="images/12.JPG"><img src="images/12.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
 						</div>
 					</div>
 					<div class="col-md-4">
@@ -364,7 +378,7 @@
 							<a class="gallery-img image-popup" href="images/11.JPG"><img src="images/11.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
 						</div>
 						<div class="gallery animate-box">
-							<a class="gallery-img image-popup" href="images/12.JPG"><img src="images/12.JPG" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+							<a class="gallery-img image-popup" href="images/25.jpeg"><img src="images/25.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
 						</div>
 					</div>
 				</div>
@@ -404,6 +418,7 @@
 }
 
 #timer div {
+	width: 20%;
     display: inline-block;
     min-width: 90px;
     padding: 15px;
@@ -420,6 +435,15 @@
     font-size: .35em;
     font-weight: 400;
 }
+.det1{
+	width: 100%;
+	padding-bottom: 30px;
+	display:initial;
+	text-align: center;
+	align-items: center;
+	color: white;
+	
+}
 }
 @media (max-width: 768px){
 	.iframew>iframe{
@@ -431,7 +455,7 @@
 	height: 100%;
     text-align: center;
     padding: 10px;
-    background: #90cbf3;
+    background: powderblue;
     font-family: sans-serif;
     font-weight: lighter;
 	display: flex;
@@ -484,10 +508,11 @@
 }
 .det1{
 	width: 100%;
-	display: inline;
+	padding-bottom: 30px;
+	display:initial;
 	text-align: center;
 	align-items: center;
-	color: whitesmoke;
+	color: white;
 	
 }
 			</style>
@@ -508,13 +533,7 @@
 								<a href="https://www.linkedin.com/in/misaki-tana/"><i class="icon-linkedin"></i></a>
 								<a href="https://www.instagram.com/milisaloki/"><i class="icon-instagram"></i></a>
 							</p>      
-							<span>
-								<p> 혼주 <br> 이진구 / Jinku Lee<br>
-									국민은행 653202-04-069296</p>
-									<p> 신랑<br>이희탁 / Hitak Lee<br>
-										농협: 168-02-37-21-02<br>
-										카카오: henrynow</p>
-									</span> 
+
 									Copyright &copy; Hitak Lee All Rights Reserved.
 						</div>
 					</div>
@@ -561,5 +580,89 @@ function updateTimer() {
   '<div>' + s + '<span>초/Seconds</span></div>';
 }
 setInterval('updateTimer()', 1000);
+var button      = $('.button');
+var content     = $('.button__content');
+var win         = $(window);
+
+var expand = function() {
+  if (button.hasClass('button--active')) {
+    return false;
+  } else {
+    var W           = win.width();
+    var xc          = W / 2;
+
+    var that        = $(this);
+    var thatWidth   = that.innerWidth() / 2;
+    var thatOffset  = that.offset();
+    var thatIndex   = that.index();
+    var other;
+
+    if (!that.next().is('.button')) {
+      other = that.prev();
+    } else {
+      other = that.next();
+    }
+
+    var otherWidth    = other.innerWidth() / 2;
+    var otherOffset   = other.offset();
+
+    // content box stuff
+    var thatContent = $('.button__content').eq(thatIndex);
+    var thatContentW = thatContent.innerWidth();
+    var thatContentH = thatContent.innerHeight();
+
+    // transform values for button
+    var thatTransX  = xc - thatOffset.left - thatWidth;
+    var otherTransX = xc - otherOffset.left - otherWidth;
+    var thatScaleX  = thatContentW / that.innerWidth();
+    var thatScaleY  = thatContentH / that.innerHeight();
+
+    that.css({
+      'z-index': '2',
+      'transform': 'translateX(' + thatTransX + 'px)'
+    });
+
+    other.css({
+      'z-index': '0',
+      'opacity': '0',
+      'transition-delay': '0.05s',
+      'transform': 'translateX(' + otherTransX + 'px)'
+    });
+
+    that.on('transitionend webkitTransitionEnd', function() {
+      that.css({
+        'transform': 'translateX(' + thatTransX + 'px) scale(' + thatScaleX +',' + thatScaleY + ')',
+      });
+
+      that.addClass('button--active');
+      thatContent.addClass('button__content--active');
+      thatContent.css('transition', 'all 1s 0.1s cubic-bezier(0.23, 1, 0.32, 1)');
+      that.off('transitionend webkitTransitionEnd');
+    });
+
+    return false;
+  }
+};
+
+var hide = function(e) {
+  var target= $(e.target);
+  if (target.is(content)) {
+    return;
+  } else {
+    button.removeAttr('style').removeClass('button--active');
+    content.removeClass('button__content--active').css('transition', 'all 0.2s 0 cubic-bezier(0.23, 1, 0.32, 1)');
+  }
+};
+
+var bindActions = function() {
+  button.on('click', expand);
+  win.on('click', hide);
+};
+
+var init = function() {
+  bindActions();
+};
+
+init();
 </script>
 </html>
